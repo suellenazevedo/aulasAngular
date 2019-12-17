@@ -1,0 +1,13 @@
+<input type="number" [(ngModel)]="id">
+<button type="button" (click)="clickAll()" value="botão">GetByID</button>
+<br><br>
+
+<h1>Comments</h1>
+
+postId: <label *ngIf="comment.postId != 0">{{comment.postId}}</label>  <br>
+id:  <label *ngIf="comment.postId != 0">{{id}}</label>  <br>
+name: {{comment.name}} <br>
+email: {{comment.email}} <br>
+body: {{comment.body}} 
+ 
+
