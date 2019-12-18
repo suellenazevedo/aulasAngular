@@ -1,0 +1,32 @@
+<div class="row " class="shadow-lg p-3 mb-5 bg-dark rounded">
+    <h2 class="text-white">Gerar posts</h2>
+
+
+    <input type="number" [(ngModel)]="id">
+
+    <button class="btn btn-secondary" type="button" (click)="btnIdClick()">Get by ID</button>
+    <button class="btn btn-secondary" type="button" (click)="btnAllClick()">Get All</button>
+
+
+    <br>
+
+    <table class="table table-striped table-dark">
+        <thead>
+            <th scope="col">userId</th>
+            <th scope="col">id</th>
+            <th scope="col">title</th>
+            <th scope="col">body</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of posts">
+                <td>{{item.userId}}</td>
+                <td>{{item.id}}</td>
+                <td>{{item.title}}</td>
+                <td>{{item.body}}</td>
+            </tr>
+        </tbody>
+
+
+
+    </table>
+</div>
